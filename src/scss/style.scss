@@ -36,11 +36,9 @@ body {
   }
   &__row {
     display: flex;
-    overflow: hidden;
   }
   &__img {
     flex: 16.66%;
-    height: auto;
   }
 }
 
@@ -133,13 +131,14 @@ body {
 }
 
 .row {
-  min-height: 576px;
+  //min-height: 576px;
   display: flex;
   &:nth-child(2n) {
     flex-direction: row-reverse;
   }
   &__img {
     width: 50%;
+    height: 100%;
   }
   &__wrapper {
     display: flex;
@@ -148,8 +147,8 @@ body {
     flex-direction: column;
     //width: 50%;
     text-align: left;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding-left: 140px / 1440px * 100%;
+    padding-right: 140px / 1440px * 100%;
   }
   &__title {
     font-size: 24px;
